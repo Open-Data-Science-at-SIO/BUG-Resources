@@ -1,19 +1,18 @@
 Blasting with DIAMOND 
 ===================================
 
-**On Linux**: 
-    Go to your home directory ::
-
-      cd
-   Download the linux binary for diamond and unzip it::
+**On Linux:**
+    
+Download the linux binary for diamond and unzip it::
       
-      curl -O http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
-      tar xzf diamond-linux64.tar.gz
+   cd # go to your home directory
+   curl -O http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
+   tar xzf diamond-linux64.tar.gz
       
-   Put Diamond in your path::
+Put Diamond in your path::
    
-      export PATH=$PATH:$HOME/diamond
-      echo 'export PATH=$PATH:$HOME/diamond' >> ~/.bashrc
+   export PATH=$PATH:$HOME/diamond
+   echo 'export PATH=$PATH:$HOME/diamond' >> ~/.bashrc
    
 
 **On Mac** (with homebrew)::
@@ -21,6 +20,9 @@ Blasting with DIAMOND
     brew install homebrew/science/diamond
     
 *If you're not using homebrew, see the diamond `documentation <https://github.com/bbuchfink/diamond/#compiling-from-source>`_ for installing diamond from source
+
+
+**Using Diamond:**
 
 Download the database you'd like to map to. As an example, let's download the SWISS-PROT database::
    
