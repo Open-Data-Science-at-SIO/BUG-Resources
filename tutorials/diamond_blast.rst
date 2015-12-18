@@ -1,19 +1,21 @@
 Blasting with DIAMOND 
 ===================================
 
-Make a new directory for diamond, for example, in your home directory::
+**On Linux**: 
+    Go to your home directory ::
 
-   cd
-   mkdir diamond
-   cd diamond
+      cd
+   Download the linux binary for diamond and unzip it::
+      
+      curl -O http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
+      tar xzf diamond-linux64.tar.gz
+      
+   Put Diamond in your path::
+   
+      export PATH=$PATH:$HOME/diamond
+      echo 'export PATH=$PATH:$HOME/diamond' >> ~/.bashrc
+   
 
-**On Linux**: download diamond & put in your path::
-   
-   curl -O http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
-   tar xzf diamond-linux64.tar.gz
-   export PATH=$PATH:$HOME/diamond
-   echo 'export PATH=$PATH:$HOME/diamond' >> ~/.bashrc
-   
 **On Mac** (with homebrew)::
 
     brew install homebrew/science/diamond
