@@ -1,29 +1,28 @@
 Blasting with DIAMOND 
 ===================================
 
-Make a new directory for diamond::
-   
+Make a new directory for diamond, for example, in your home directory::
+
    cd
    mkdir diamond
    cd diamond
 
-On Linux: download diamond::
+**On Linux**: download diamond & put in your path::
    
-   wget http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
+   curl -O http://github.com/bbuchfink/diamond/releases/download/v0.7.9/diamond-linux64.tar.gz
    tar xzf diamond-linux64.tar.gz
-
-Put diamond in your path::
-   
    export PATH=$PATH:$HOME/diamond
    echo 'export PATH=$PATH:$HOME/diamond' >> ~/.bashrc
    
-On Mac (with homebrew)::
+**On Mac** (with homebrew)::
 
     brew install homebrew/science/diamond
+    
+*If you're not using homebrew, see the diamond `documentation <https://github.com/bbuchfink/diamond/#compiling-from-source>`_ for installing diamond from source
 
-Download the swissprot database::
+Download the database you'd like to map to. As an example, let's download the SWISS-PROT database::
    
-   wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+   curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
    gunzip uniprot_sprot.fasta.gz
 
 Index the database::
