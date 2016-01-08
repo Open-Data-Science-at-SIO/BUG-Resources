@@ -2,7 +2,7 @@ Using Transrate to assess transcriptome quality
 ==============================================
 
 :author: N Tessa Pierce
-:date: Nov 2, 2015
+:date: Jan 8, 2016
 
 Transrate can help assess the quality of your de-novo transcriptome assembly.
 It calculates a number of length and sequence based metrics such as N50 and 
