@@ -5,11 +5,12 @@ Using Transrate to assess transcriptome quality
 :date: Jan 8, 2016
 
 Transrate can help assess the quality of your de-novo transcriptome assembly.
-It calculates a number of length and sequence based metrics such as N50 and 
-GC content, maps input reads back to contigs and calculates coverage and mapping
-percentage, and provides a 'score' per assembly that represents quality. This metric
-may help you choose the best assembler and parameters for your species. Transrate also
-provides contig-level statistics to allow you to filter out low-scoring contigs.
+It calculates a number of length-based and sequence-based metrics such as N50 and 
+GC content, can map input reads to contigs to calculate coverage and mapping
+percentage, and ultimately provides a 'score' per assembly (and per contig) that 
+represents quality. It also allows comparisons to DNA,RNA, and peptide reference sequences.
+These metrics may help you choose the best assembler and parameters for your species.
+Transrate also provides contig-level statistics to allow you to filter out low-scoring contigs.
 
 - `website <http://hibberdlab.com/transrate>`__
 - `preprint <http://dx.doi.org/10.1101/021626>`__
