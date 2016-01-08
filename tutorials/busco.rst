@@ -4,10 +4,13 @@ Using BUSCO to Assess Transcriptome Quality
 :author: N Tessa Pierce
 :date: Jan 8, 2016
 
-BUSCO .... information 
 
-- `website <http://salmon.readthedocs.org/en/latest>`__
-- `paper <http://biorxiv.org/content/early/2015/06/27/021592>`__
+*in progress*
+
+BUSCO summary + information goes here
+
+- `website <http://busco.ezlab.org>`__
+- `paper <http://dx.doi.org/10.1093/bioinformatics/btv351>`__
 
 
 Disclaimer: For all tutorials, we assume you're working on a linux machine and 
@@ -16,8 +19,6 @@ directory, just replace $HOME with the path to that directory. Wherever possible
 we download pre-compiled linux binaries. If you're working on a different machine,
 or the binary installation doesn't work, please see the software website for 
 instructions to install the software from source code.
-
-
 
 
 
@@ -38,14 +39,10 @@ add BUSCO to $PATH::
 
 See the help information::
 
-   python3 ./BUSCO_v1.1b1.py -h
+   python3 BUSCO_v1.1b1.py -h
    
 NOTE: BUSCO requires python3. Most linux servers should have this pre-installed.
 
-download a busco database::
-
-   curl -LO http://busco.ezlab.org/files/metazoa_buscos.tar.gz
-   tar -zxf metazoa_buscos.tar.gz
 
 
 Run BUSCO on test data
@@ -55,12 +52,18 @@ Create a working directory::
 
    mkdir $HOME/busco
    cd $HOME/busco
+   
+Download a busco database::
 
-Transrate provides some test data that we can use to test salmon::
+   curl -LO http://busco.ezlab.org/files/metazoa_buscos.tar.gz
+   tar -zxf metazoa_buscos.tar.gz
+
+**ADD: information on BUSCO databases**
+
+Transrate provides some test data that we can use to test BUSCO::
 
    curl -O -L https://bintray.com/artifact/download/blahah/generic/example_data.tar.gz
    tar zxf example_data.tar.gz
-
 
 Run BUSCO::
 
@@ -73,6 +76,8 @@ Results
 Look at the short results summary::
 
    cat run*/short*
+   
+** ADD: using BUSCO to assess transcriptomes, genomes etc. What is a "good" result, etc
 
 
 
