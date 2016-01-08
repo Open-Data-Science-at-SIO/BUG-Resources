@@ -11,8 +11,8 @@ percentage, and provides a 'score' per assembly that represents quality. This me
 may help you choose the best assembler and parameters for your species. Transrate also
 provides contig-level statistics to allow you to filter out low-scoring contigs.
 
-- website: http://hibberdlab.com/transrate
-- preprint: http://dx.doi.org/10.1101/021626 
+- `website <http://hibberdlab.com/transrate>`__
+- `preprint <http://dx.doi.org/10.1101/021626>`__
 
 
 Disclaimer: For all tutorials, we assume you're working on a linux machine and 
@@ -45,7 +45,7 @@ See the help information::
    transrate -h
 
 
-Run tranrate on test data
+Run transrate on test data
 ------------------
 
 Create a working directory::
@@ -219,7 +219,8 @@ You can specify the number of threads to use::
 See more examples of transrate commands with::
 
    transrate --examples
-   
+
+Please see the transrate `website <http://hibberdlab.com/transrate>`__ for more information on usage & metrics.
 
 
 
