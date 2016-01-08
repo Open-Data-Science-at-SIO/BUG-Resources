@@ -11,10 +11,11 @@ percentage, and provides a 'score' per assembly that represents quality. This me
 may help you choose the best assembler and parameters for your species. Transrate also
 provides contig-level statistics to allow you to filter out low-scoring contigs.
 
-website: http://hibberdlab.com/transrate/
-preprint: http://dx.doi.org/10.1101/021626 
+- website: http://hibberdlab.com/transrate
+- preprint: http://dx.doi.org/10.1101/021626 
 
-* Disclaimer: For all tutorials, we assume you're working on a linux machine and 
+
+Disclaimer: For all tutorials, we assume you're working on a linux machine and 
 you're installing into the $HOME directory. If you're installing to a different
 directory, just replace $HOME with the path to that directory. FYI, transrate will
 work on macs, see the website for instructions.
@@ -22,18 +23,27 @@ work on macs, see the website for instructions.
 Install transrate
 -----------------
 
-Grab and install transrate::
+download::
 
    cd $HOME
    curl -O -L https://bintray.com/artifact/download/blahah/generic/transrate-1.0.1-linux-x86_64.tar.gz 
    tar zxf transrate-1.0.1-linux-x86_64.tar.gz
+
+add to $PATH::
 
    export PATH=$PATH:$HOME/transrate-1.0.1-linux-x86_64
    echo 'export PATH=$PATH:$HOME/transrate-1.0.1-linux-x86_64' >> ~/.bashrc
    export PATH=$PATH:$HOME/transrate-1.0.1-linux-x86_64/bin
    echo 'export PATH=$PATH:$HOME/transrate-1.0.1-linux-x86_64/bin' >> ~/.bashrc
 
+install dependencies::
+
    transrate --install-deps ref
+   
+See the help information::
+
+   transrate -h
+
 
 Run tranrate on test data
 ------------------
@@ -43,20 +53,15 @@ Create a working directory::
    mkdir $HOME/transrate
    cd $HOME/transrate
 
-Grab the Transrate test data::
+download transrate test data::
 
    curl -O -L https://bintray.com/artifact/download/blahah/generic/example_data.tar.gz
    tar zxf example_data.tar.gz
-   cd example_data
-
-
-See the help information::
-
-   transrate -h
-
+   
 
 Run initial assembly evaluation (contig metrics only)::
 
+   cd example_data
    transrate -a transcripts.fa
 
 
@@ -91,9 +96,9 @@ The following output should print to your screen::
    [INFO] 2016-01-08 10:32:31 : No reference provided, skipping comparative diagnostics
 
 
-You can read more about the `contig metrics, here <http://hibberdlab.com/transrate/metrics.html#contig-metrics>`__.
+Read about the `contig metrics <http://hibberdlab.com/transrate/metrics.html#contig-metrics>`__.
 
-Running a read-based analysis: read mapping metrics
+Using read-based metrics to assess your assembly
 ---------------------------------------------------
 
 Transrate has read-based metrics to assess how well your reads map to your transcriptome 
@@ -110,7 +115,7 @@ run your cleaned reads against it.**
 
 Run test evaluation using input reads::
 
-   transrate -a transcripts.fa --left left.fq --right right.fq 
+   transrate --assembly transcripts.fa --left left.fq --right right.fq 
 
 In addition to contig metrics, you should see::
 
@@ -145,23 +150,22 @@ In addition to contig metrics, you should see::
 
 
 
-Running a reference analysis: comparative metrics
+Comparing your assembly to a reference
 -------------------------------------------------
 
-If you have a reference transcriptome (does not need to be from your species),
+If you have a reference (DNA, RNA or peptide; does not need to be from your species),
 you can use transrate to assess how well your transcriptome maps to the reference. 
-Imporantly, you can asses quality to DNA, RNA or peptides. If you're working with
-a divergent reference, assessing relative to a peptide file may provide the best
-information. Read more about the `comparative metrics, here <http://hibberdlab.com/transrate/metrics.html#comparative-metrics>`__.
+If you're working with a relatively divergent reference, assessing relative to a 
+peptide file may provide the best information. Read about the `comparative metrics here <http://hibberdlab.com/transrate/metrics.html#comparative-metrics>`__.
 
 
-Transrate doesn't provide an example reference, but for demostration purposes, 
+Transrate doesn't provide an example reference, but for demonstration purposes, 
 we can use the 'transcripts.fa' as both assembly and reference. Since the files
 are identical, we should see complete coverage.
 
 To run reference assessment::
 
-   transrate -a transcripts.fa --reference transcripts.fa 
+   transrate --assembly transcripts.fa --reference transcripts.fa 
 
 In addition to contig metrics, you should see::
 
@@ -200,6 +204,22 @@ If you have assembles one.fa and two.fa::
    transrate --assembly one.fa,two.fa
 
 note: make sure there are no spaces between your comma-separated assembly names
+
+Additional Notes
+------------------------------------------
+
+You can combine the above analyses into a single command::
+
+   transrate --assembly one.fa,two.fa --left left.fa --right right.fa --reference transcripts.fa
+   
+You can specify the number of threads to use::
+
+   transrate --assembly transcripts.fasta --threads 8
+
+See more examples of transrate commands with::
+
+   transrate --examples
+   
 
 
 
