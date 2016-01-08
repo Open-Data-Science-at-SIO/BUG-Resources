@@ -1,6 +1,9 @@
 Blasting with DIAMOND 
 ===================================
 
+:author: N Tessa Pierce, ntpierce@ucsd.edu
+:date: Nov 3, 2015
+
 **On Linux:**
     
 Download the linux binary for diamond and unzip it::
