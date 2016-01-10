@@ -4,13 +4,13 @@ Blasting with DIAMOND
 :author: N Tessa Pierce, ntpierce@ucsd.edu
 :date: Nov 3, 2015
 
-For a discussion of diamond & when to use it, see the pdf from Sheila Podell's talk `here. <https://github.com/SIO-BUG/BUG-Resources/blob/master/presentations/diamond_talk_110915.pdf>`__
+For a discussion of the diamond algorithm & when to use diamond, see the pdf from Sheila Podell's talk `here. <https://github.com/SIO-BUG/BUG-Resources/blob/master/presentations/diamond_talk_110915.pdf>`__
 
-tl;dr: Diamond is a very fast BLAST+ alternative, but only works on protein databases (=only blastx, blastp, no blastn). Use it when you have large datasets, or want to map to large databases (e.g. NR, uniref90, etc). It's easy to install and use. The Nature Methods paper (+ sheila's testing) suggests it's comparable to blast+ in terms of accuracy and sensitivity.
+tl;dr: Diamond is a very fast BLAST+ alternative, but only works on protein databases (=only blastx, blastp, no blastn). Use it when you have large datasets or want to map to large databases (e.g. NR, uniref90, etc). It's easy to install and use. The `paper <http://dx.doi.org/10.1038/nmeth.3176>`__ (+ sheila's testing) suggests it's comparable to blast+ in terms of accuracy and sensitivity.
 
 
-- `website <http://github.com/bbuchfink/diamond>`__
-- `paper <http://dx.doi.org/10.1038/nmeth.3176>`__
+- `Website <http://github.com/bbuchfink/diamond>`__
+- `Nature Methods paper <http://dx.doi.org/10.1038/nmeth.3176>`__
 
 
 Disclaimer: For tutorials, we typically assume you're working on a linux machine and 
@@ -48,9 +48,10 @@ Put Diamond in your path::
 Using DIAMOND
 -----------------
 
-See the diamond help info::
+See the diamond help info `online <https://github.com/bbuchfink/diamond/>`__ or via command-line::
 
     diamond -h
+    
 
 Make a working directory::
 
