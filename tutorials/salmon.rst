@@ -13,14 +13,14 @@ Salmon results can be used with edgeR, DESeq2, etc for differential expression a
 - `preprint <http://biorxiv.org/content/early/2015/06/27/021592>`__
 
 
-*Disclaimer:* For all tutorials, we assume you're working on a linux machine and 
+**Disclaimer:** For all tutorials, we assume you're working on a linux machine and 
 you're installing into the $HOME directory. If you're installing to a different
 directory, just replace $HOME with the path to that directory. Wherever possible,
 we download pre-compiled linux binaries. If you're working on a different machine,
 or the binary installation doesn't work, please see the software website for 
 instructions to install the software from source code. 
 
-*Download tip:* If you're on a secure file system (e.g. SWFSC people), you may not be able to 
+**Download tip:** If you're on a secure file system (e.g. SWFSC people), you may not be able to 
 download using curl. In that case, do the downloads on your laptop or other machine (either with
 these commands or via the tool's website, and use sftp to transfer the files up to your linux machine.
 
@@ -34,7 +34,7 @@ download::
    curl -O -L https://github.com/COMBINE-lab/salmon/releases/download/v0.6.0/SalmonBeta-0.6.0_DebianSqueeze.tar.gz 
    tar zxf SalmonBeta-0.6.1_DebianSqueeze.tar.gz     #downloads as version 0.6.1, not 0.6.0
    
-**Note:** Don't worry if your linux system is not Debian 'squeeze'. The salmon folks built this binary for an older distribution of linux so that it would be compatible with most (current) commonly used linux distributions. If you run into issues, let us know!
+**Note:** Don't worry if your linux system is not Debian 'squeeze'. The salmon folks built this binary for an older distribution of linux so that it would be compatible with most commonly used linux distributions. If you run into issues, let us know!
 
 Add to $PATH::
 
