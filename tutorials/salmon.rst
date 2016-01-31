@@ -13,12 +13,16 @@ Salmon results can be used with edgeR, DESeq2, etc for differential expression a
 - `preprint <http://biorxiv.org/content/early/2015/06/27/021592>`__
 
 
-Disclaimer: For all tutorials, we assume you're working on a linux machine and 
+*Disclaimer:* For all tutorials, we assume you're working on a linux machine and 
 you're installing into the $HOME directory. If you're installing to a different
 directory, just replace $HOME with the path to that directory. Wherever possible,
 we download pre-compiled linux binaries. If you're working on a different machine,
 or the binary installation doesn't work, please see the software website for 
-instructions to install the software from source code.
+instructions to install the software from source code. 
+
+*Download tip:* If you're on a secure file system (e.g. SWFSC people), you may not be able to 
+download using curl. In that case, do the downloads on your laptop or other machine (either with
+these commands or via the tool's website, and use sftp to transfer the files up to your linux machine.
 
 
 Install Salmon
