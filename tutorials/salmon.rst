@@ -32,14 +32,16 @@ download::
 
    cd $HOME
    curl -O -L https://github.com/COMBINE-lab/salmon/releases/download/v0.6.0/SalmonBeta-0.6.0_DebianSqueeze.tar.gz 
-   tar zxf SalmonBeta-0.6.0_DebianSqueeze.tar.gz
+   tar zxf SalmonBeta-0.6.1_DebianSqueeze.tar.gz     #downloads as version 0.6.1, not 0.6.0
+   
+**Note:** Don't worry if your linux system is not Debian 'squeeze'. The salmon folks built this binary for an older distribution of linux so that it would be compatible with most (current) commonly used linux distributions. If you run into issues, let us know!
 
 Add to $PATH::
 
-   export PATH=$PATH:$HOME/SalmonBeta-0.6.0_DebianSqueeze/bin
-   echo 'export PATH=$PATH:$HOME/SalmonBeta-0.6.0_DebianSqueeze/bin' >> ~/.bashrc
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/SalmonBeta-0.6.0_DebianSqueeze/lib
-   echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/SalmonBeta-0.6.0_DebianSqueeze/lib' >> ~/.bashrc
+   export PATH=$PATH:$HOME/SalmonBeta-0.6.1_DebianSqueeze/bin
+   echo 'export PATH=$PATH:$HOME/SalmonBeta-0.6.1_DebianSqueeze/bin' >> ~/.bashrc
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/SalmonBeta-0.6.1_DebianSqueeze/lib
+   echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/SalmonBeta-0.6.1_DebianSqueeze/lib' >> ~/.bashrc
 
 
 See the help information::
