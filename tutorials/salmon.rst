@@ -82,7 +82,7 @@ Results
 
 Look at the log file, which contains the parameters used in the run, plus a % mapping::
 
-   cat logs/salmon_quant.log
+   cat sample_quant/logs/salmon_quant.log
 
 
 Look at the quantification results:: 
