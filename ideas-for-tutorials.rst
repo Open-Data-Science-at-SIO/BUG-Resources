@@ -1,8 +1,16 @@
 List of tutorials to write
 ============================
 
-*We'll spend the Thurs, Jan 21 BUG Project (3:30pm, Hubbs Hall 2nd floor) meeting developing this list*
+Meetings: 3pm every other Friday (Feb 19)
+
+*in progress tutorials*
+- command line BLAST+ against SILVA and PR2 (Jess, Beverly)
+- biopython (Raffie)
+- example ipython notebook (Raffie)
+- phylogenomics (Thiago)
+- MOTHUR troubleshooting (Maitreyi)
+
+*other requested tutorials*
 
 - using R in jupyter notebook (see https://www.continuum.io/blog/developer/jupyter-and-conda-r)
 - accessing TSCC
-
