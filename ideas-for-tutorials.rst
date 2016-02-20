@@ -8,8 +8,10 @@ Meetings: 3pm every other Friday (Feb 19)
 - command line BLAST+ against SILVA and PR2 (Jess, Beverly)
 - biopython (Raffie)
 - example ipython notebook (Raffie)
-- phylogenomics (Thiago)
+- phylogenomics (Tiago)
+- genomic assembly of short reads (Tiago)
 - MOTHUR troubleshooting (Maitreyi)
+- WGCNA (weighted group correlation network analysis) overview and documentation (powerpoint; clusters of coexpressed genes; Bethany)
 
 *other requested tutorials*
 
