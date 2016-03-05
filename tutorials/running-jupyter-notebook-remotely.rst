@@ -1,7 +1,7 @@
 Run Jupyter Notebook On a Remote Server
 =========================================
 
-If you have big data on a remote server, you might want to open a jupyter notebook directly on that server, rather than copying data down to your own computer. You can run a jupyter notebook on a linux server with no GUI interface and work on it from a browser window on your own computer. Here's how.
+If you have big data on a remote server, you might want to open a jupyter notebook directly on that server, rather than copying data down to your own computer. Here's how to run a jupyter notebook from a server and work on it on from your computer's web browser.
 
 On the Remote server
 -------------------
