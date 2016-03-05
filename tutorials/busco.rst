@@ -9,10 +9,11 @@ Using BUSCO to Assess Transcriptome Quality
 Why use BUSCO?
 -----------------
 
-BUSCO is a tool to help assess the quality of *de novo* assemblies based on the discovery of genes expected to be conserved across species groups. It provides a summary of the genes that were discovered in single-copy (complete and fragmented), and those discovered more than once (% duplicated). The %complete and %fragmented metrics can be used as an estimate of the "completeness" of the assembled transcriptome or genome. Optimal assemblies will maximize the %complete orthologs without inflating the %duplicated metric.
 
-From the website:
-BUSCO (Benchmarking Universal Single-Copy Orthologs) provides measures for quantitative assessment of genome assembly, gene set, and transcriptome completeness based on evolutionarily informed expectations of gene content from near-universal single-copy orthologs selected from OrthoDB. provides hmm's for genes.  
+BUSCO (Benchmarking Universal Single-Copy Orthologs) provides measures for quantitative assessment of genome assembly, gene set, and transcriptome completeness based on evolutionarily informed expectations of gene content from near-universal single-copy orthologs selected from OrthoDB.
+
+For transcriptomes, BUSCO %complete and %fragmented metrics can be used as an estimate of the "completeness" of the assembly and should be reported in publication of the transcriptome. When comparing assemblies made with different paramters, the best assemblies will maximize the %complete/%fragmented metrics without inflating the %duplicated metric. 
+
 
 - `website <http://busco.ezlab.org>`__
 - `paper <http://dx.doi.org/10.1093/bioinformatics/btv351>`__
