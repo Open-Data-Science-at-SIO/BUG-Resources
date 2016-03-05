@@ -1,14 +1,14 @@
 Run Jupyter Notebook On a Remote Server
 =========================================
 
-If you want to run jupyter (ipython) notebook from a remote server that has no GUI interface...
+If you have big data on a remote server, you might want to open a jupyter notebook directly on that server, rather than copying data down to your own computer. You can run a jupyter notebook on a linux server with no GUI interface and work on it from a browser window on your own computer. Here's how.
 
 On the Remote server
 -------------------
 
 ::
 
-    ipython notebook —no-browser —port=8889
+    jupyter notebook --no-browser --port=8889
 
 On your Local Mac
 ----------------
