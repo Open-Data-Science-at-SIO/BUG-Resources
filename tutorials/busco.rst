@@ -4,10 +4,16 @@ Using BUSCO to Assess Transcriptome Quality
 :author: N Tessa Pierce
 :date: Jan 8, 2016
 
-
 *in progress*
 
-BUSCO summary + information goes here
+Why use BUSCO?
+-----------------
+
+
+BUSCO (Benchmarking Universal Single-Copy Orthologs) provides measures for quantitative assessment of genome assembly, gene set, and transcriptome completeness based on evolutionarily informed expectations of gene content from near-universal single-copy orthologs selected from OrthoDB.
+
+For transcriptomes, BUSCO %complete and %fragmented metrics can be used as an estimate of the "completeness" of the assembly and should be reported in publication of the transcriptome. When comparing assemblies made with different paramters, the best assemblies will maximize the %complete/%fragmented metrics without inflating the %duplicated metric. 
+
 
 - `website <http://busco.ezlab.org>`__
 - `paper <http://dx.doi.org/10.1093/bioinformatics/btv351>`__
