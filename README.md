@@ -3,7 +3,7 @@
 
 [![Join the chat at https://gitter.im/SIO-BUG/BUG-Resources](https://badges.gitter.im/SIO-BUG/BUG-Resources.svg)](https://gitter.im/SIO-BUG/BUG-Resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This group exists to facilitate bioinformatic research within the UCSD-SIO-NOAA community by encouraging information exchange and networking. [Subscribe to our listserve](https://siomail.ucsd.edu/mailman/listinfo/bioinf) for updates and announcements from the group.
+This group exists to facilitate bioinformatic research within the UCSD-SIO-NOAA community by encouraging information exchange and networking. [Subscribe to our listserv](https://siomail.ucsd.edu/mailman/listinfo/bioinf) for updates and announcements from the group.
 
  
 
